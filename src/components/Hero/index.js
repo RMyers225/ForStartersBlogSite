@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import Card from '../UI/Card';
 import Logo from '../Logo';
+import Navbar from '../Navbar';
 
 /**
  * @author
@@ -15,6 +16,7 @@ const Hero = (props) => {
                 <div style={{ padding: '50px 0'}}>
                 <Logo />
                 </div>
+                <Navbar />
                 "For Starters..."
             </Card>
         </div>
