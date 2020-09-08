@@ -23,7 +23,7 @@ const Navbar = (props) => {
     }
 
 
-    const searchClass = search ? 'searchInput active': 'searchInput;'
+    const searchClass = search ? 'searchInput active': 'searchInput';
 
     return (
         <div className="navbar">

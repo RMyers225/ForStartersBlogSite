@@ -3,18 +3,25 @@ import './App.css';
 import Home from './containers/Home';
 import Header from './components/Header';
 import Hero from './components/Hero';
-
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import ContactUS from './containers/ContactUs';
 
 function App() {
   return (
+
+    <Router>
     <div className="App">
-      "For Starters...""
+      "For Starters..." 
       <Header />
       <Hero />
-      <Home />
+      <Route path="/" exact component={Home} />
+      <Route path="/contact-us" component={ContactUS}/>
+
     </div>
+    </Router> 
+
   );
 }
-
+ 
 export default App;
   
